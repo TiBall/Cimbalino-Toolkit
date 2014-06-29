@@ -93,6 +93,7 @@ header img.logo {
   border: 5px solid #FFF;
   border-radius: 15px;
   float: left;
+  margin-right: 10px;
 }
 
 .inner {
@@ -387,10 +388,10 @@ footer a:hover {
     width: 740px;
   }
   header h1, header h2 {
-    width: 340px;
+    width: 500px;
   }
   header h1 {
-    font-size: 60px;
+    font-size: 48px;
   }
   header h2 {
     font-size: 30px;
