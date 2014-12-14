@@ -249,6 +249,11 @@ namespace Cimbalino.Toolkit.Services
 #if WINDOWS_PHONE_APP
                 HardwareButtons.BackPressed += (s, e) =>
                 {
+                    if (e.Handled)
+                    {
+                        //Do not interfere with other custom BackPressed handlers
+                        return;
+                    }
                     var eventHandler = BackKeyPressed;
                     var eventArgs = new NavigationServiceBackKeyPressedEventArgs();
 
